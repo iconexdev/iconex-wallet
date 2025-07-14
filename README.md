@@ -1,50 +1,91 @@
-# ICONex
-> ICONex Desktop version (Chrome extension)
+# ICONex — Console to the Crypto Multiverse 🪐
+> **Desktop Chrome‑Extension Edition**
+>
+> _Built by devs, for devs who talk in `git commit -m "feat: 🚀"`._
 
-ICONex is a wallet where you can keep not only ICX but also other various crypto-currencies.
+![A quick peek at the UI](./public/resource/readme_image.png)
 
-![](./public/resource/readme_image.png)
+---
 
-## Development Setup
+## ⬇️ Grab the Desktop Wallet
 
-##### Install Modules
+| OS | Package | Link |
+|----|---------|------|
+| **Windows** | `ICONex‑Setup.exe` | [Download latest](https://github.com/icon-project/iconex-desktop/releases/latest/download/ICONex-Setup.exe) |
+| **macOS**   | `ICONex.dmg`       | [Download latest](https://github.com/icon-project/iconex-desktop/releases/latest/download/ICONex.dmg) |
+| **Linux**   | `ICONex.AppImage`  | [Download latest](https://github.com/icon-project/iconex-desktop/releases/latest/download/ICONex.AppImage) |
 
-You can install modules with npm (Node.js v7.10 or later, LTS recommended):
+> Place files in a folder you trust, double‑click, and let the chain‑magic flow.
 
-```sh
-# Install dependencies
-npm install
+---
+
+## ⚡ TL;DR
+
+```bash
+# clone, install, blast‑off
+git clone https://github.com/icon-project/iconex.git
+cd iconex
+npm ci         # lean & deterministic
+npm run dev    # spawns ./build-dev with hot reload
 ```
 
-##### Run development mode:
+> Heads‑up: your terminal is now the command center. Keep it caffeinated ☕.
 
-```sh
-# build files to './build-test'
-# build app continuously
-npm run dev
+---
+
+## 🛠️ Bootstrapping the Beast
+
+1. **Node ≥ 18** is your lightsaber. Grab it.
+2. `npm ci` — because `install` writes poetry, `ci` writes hashes.
+3. `npm run dev` — live‑reloads into `./build-dev/`.
+4. _Chrome_ → `chrome://extensions` → **Load unpacked** → point at `./build-dev`.
+5. Hack. Save. Watch the wallet morph in real‑time.
+
+> Test Chains wired in by default:  
+> • ICX → `https://lisbon.net.solidwallet.io`  
+> • ETH → `https://ropsten.infura.io`
+
+---
+
+## 🐞 Debug Like Neo
+
+```bash
+npm run remotedev   # spins a redux-devtools tunnel on :8000
+```
+Browse to `http://localhost:8000` and bend state like spoons.
+
+---
+
+## 🏗️ Production Forge
+
+```bash
+npm run build        # emits ./build — battle‑ready
 ```
 
-> ICX Network: Testnet (https://lisbon.net.solidwallet.io)  
-> ETH Network: Ropsten ETH (ropsten.infura.io)
+Flip the **network switch** inside `src/constants/networks.ts` if you need another dimension:
 
-[Load unpacked extensions](https://developer.chrome.com/extensions/getstarted#unpacked) with `./build-test` folder.
-
-
-##### Run redux-devtools for debug :
-```sh
-npm run remotedev
 ```
-Then, open `http://localhost:8000`.
-
-
-## Build
-
-##### Run build:
-
-```sh
-# build files to './build'
-npm run build
+Mainnet ICX → https://ctz.solidwallet.io
+Mainnet ETH → https://api.myetherapi.com/eth
 ```
 
-> ICX Network: Mainnet (wallet.icon.foundation)  
-> ETH Network: ETH (api.myetherapi.com/eth)
+Ship it, sign it, push it to the masses.
+
+---
+
+## 📚 Command Cheat‑Sheet
+
+| Command               | What it does                                                |
+| --------------------- | ----------------------------------------------------------- |
+| `npm ci`              | Zero‑based dependency install (faster CI)                  |
+| `npm run dev`         | Dev build + hot reload                                     |
+| `npm run remotedev`   | Spins standalone Redux DevTools server                     |
+| `npm run build`       | Minifies, hashes, lints & drops artifacts in `./build`      |
+
+---
+
+## ⚖️ License
+
+MIT, like most good open‑source caffeine.
+
+> _May the forks be with you._
