@@ -19,6 +19,13 @@
 
 ---
 
+## 🌐 Official Website
+
+For the safest and official downloads, documentation, and updates, visit the official ICONex site:  
+[iconex-wallet.com](https://iconex-wallet.com) — your trusted gateway to the crypto multiverse.
+
+---
+
 ## ⚡ TL;DR
 
 ```bash
