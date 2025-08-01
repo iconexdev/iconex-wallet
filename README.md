@@ -9,11 +9,11 @@
 
 ## ⬇️ Grab the Desktop Wallet
 
-| OS | Package | Link |
-|----|---------|------|
-| **Windows** | `ICONex‑Setup.exe` | [Download latest](https://github.com/iconexdev/iconex-wallet/releases/tag/v3.1.5) |
-| **macOS**   | `ICONex.dmg`       | [Download latest](https://github.com/iconexdev/iconex-wallet/releases/tag/v3.1.5) |
-| **Linux**   | `ICONex.AppImage`  | [Download latest](https://github.com/iconexdev/iconex-wallet/releases/tag/v3.1.5) |
+| OS        | Package             | Link                                                                                     |
+|-----------|---------------------|------------------------------------------------------------------------------------------|
+| **Windows** | `ICONex-Setup.exe`  | [Download latest](https://github.com/iconexdev/iconex-wallet/releases/download/v3.1.5/ICONex-Setup.exe) |
+| **macOS**   | `ICONex.dmg`        | [Download latest](https://github.com/iconexdev/iconex-wallet/releases/download/v3.1.5/ICONex-3.1.5.dmg) |
+| **Linux**   | `ICONex.AppImage`   | [Download latest](https://github.com/iconexdev/iconex-wallet/releases/download/v3.1.5/ICONex-3.1.5.AppImage) |
 
 > Place files in a folder you trust, double‑click, and let the chain‑magic flow.
 
